@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: center; 
+    padding: 24px 0;;   
+}
+.menu{
+    display: flex;
+    gap:24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+}
+.menu a{
+    margin-right: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: blue;
+}
+.About{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;    
+    gap:24px;
+}
+
+.img-section img{
+    margin:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 確保圖片填滿容器 */
+    object-position: center; /* 確保圖片居中 */
+    display: block; /* 確保圖片不會有底部空隙 */
+}
+.text-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.text-inner .date{
+    font-size:16px;
+    font-family:Noto Sans TC;
+    Line-height:150%;
+    Letter-spacing:0%;
+    margin:0 0 0 10px;
+}
+.text-inner .newstitle{
+    font-size: 24px;
+    font-family:Noto Sans TC;
+    color: #0027D5;
+    font-weight: 500;
+    Line-height:150%;
+    Letter-spacing:0%;
+    margin:0 0 0 10px;
+    display: flex;
+    align-items: center;
+}
+.text-inner .newsbutton{
+    font-size: 16px;
+    font-family:Noto Sans TC;
+    font-weight:700;
+    color: white;
+    background-color: #0027D5;
+    border-radius: 40px;
+    padding: 6px 12px 6px 12px;
+    text-decoration: none;
+    margin: 0 0 0 10px;
+}
+.text-inner .newsbutton:hover{
+    background-color: darkblue;
+}
+.text-inner .headline{
+    font-size: 28px;
+    font-family:Noto Sans TC;
+    font-weight: 700;
+    Line-Height:150%;
+    Letter-spacing:0%;
+    margin: 0 0 0 10px;
+}
+
+.Content{
+  width: 100%;
+  max-width: 636px;
+  margin: 80px auto;
+  padding: 0 12px;
+  box-sizing: border-box; /*避免 padding 撐出容器 */
+}
+
+h2{
+  font-family: Noto Sans TC;
+  font-size: 28px;
+  color: #0027D5;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+
+img{
+  width: 100%;
+  margin: 24px auto 12px auto;
+}
+
+h3{
+  font-family: Noto Sans TC;
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+p{ 
+    white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: Noto Sans TC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing:0%;
+  margin-bottom: 4px;
+}
+ol,ul {  
+  padding-left: 1.5em; /* 確保縮排正常顯示 */
+  margin:0;
+}
+
+li{
+  font-family: Noto Sans TC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  margin:0px;
+}
+.summary{
+  font-family: Noto Sans TC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing:0%;
+  margin-bottom: 4px;
+  background-color: #EDEDED;
+  border-radius: 24px;
+  padding: 24PX;
+}
+.pagefunction{
+  display:flex;
+  justify-content:space-between;
+  margin:24px auto;
+}
+.pagechange{
+  display:inline-block;
+  border-radius: 40px;
+  border:1px black solid;
+  padding: 8px 16px;
+  font-family: Noto Sans TC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing:0%;
+  cursor: pointer; /* 滑鼠移上去像按鈕 */
+  text-align: center; /* 置中文字 */
+  text-decoration: none; /* 去除底線（若是連結） */
+  background-color: white; /* 可選 */
+  color: #333;        
+}
+
+
+
+
+.footer{
+    text-align: center;
+    margin: 80px 312px;
+}
+.footer-inner{
+    height: 208px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact{    
+    font-size: 32px;
+    color: #000000;
+    font-family: Noto Sans TC;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;;
+    gap: Specing/ 4px;
+    list-style: none; 
+    margin:0;
+    padding:0;
+}
+.social-media .img{
+    display: flex;
+    align-items: center;
+}
+.social-media .img img {
+  width: 44px;
+  height:auto;
+  display: block;
+  margin: 0 auto;
+}
+.footer .rights{    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+@media (max-width: 375px) {
+    .header{
+        margin: 24px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .menu a{
+        font-size: 28px;
+        line-height: 150%;
+        letter-spacing: 0%;
+    }  
+    .img-section img{
+        margin:0px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .text-section {
+        
+        flex-direction: column;
+        flex: 1 1 100%;        
+    }
+    .text-inner{
+        margin:0 auto;
+    }
+
+    .text-inner .date {
+        font-size: 14px;
+        margin: 10px 0 0 0;
+    }
+    .text-inner .newstitle {
+        font-size: 16px;
+        margin: 0 0 0 0;
+    }
+    .text-inner .newsbutton {
+        font-size: 14px;
+        padding: 3px 8px;
+        margin: 0 0 0 10px;
+    }
+    .text-inner .headline {
+        font-size: 20px;
+        margin: 0 0 0 0;
+    }
+    .Content{
+       width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    }
+    p, li{
+        white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    }
+    img{
+    object-fit: cover;
+    }
+    .footer{
+        margin:0;
+        margin:24px;
+        gap:10px;
+        text-align: center;
+    }
+
+    .footer-inner{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
