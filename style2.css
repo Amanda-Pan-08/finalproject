@@ -301,6 +301,13 @@ li{
         font-size: 14px;
         margin-top: 16px;
     }
+    .pagechange:hover{
+        background-color: #dddbdb; /* 滑鼠移上去變色 */
+    }
+    .social-media li.img a {
+        text-decoration: none;
+        color: inherit;
+    }
 
 }
 
@@ -319,6 +326,13 @@ li{
     .footer{
         padding:0 16px;
         margin:40px auto;
+    }
+    .pagechange:hover{
+        background-color: #dddbdb; /* 滑鼠移上去變色 */
+    }
+    .social-media li.img a {
+        text-decoration: none;
+        color: inherit;
     }
 }
 
