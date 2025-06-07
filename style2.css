@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    line-height: 1.5;
+    font-family: 'Noto Sans TC', sans-serif; /* 使用 Noto Sans TC 字體 */
 }
 .wrap{
     margin: 0 auto;
@@ -51,15 +53,12 @@ body{
     justify-content: flex-start;
 }
 .text-inner .date{
-    font-size:16px;
-    font-family:Noto Sans TC;
     Line-height:150%;
     Letter-spacing:0%;
     margin:0 0 0 10px;
 }
 .text-inner .newstitle{
     font-size: 24px;
-    font-family:Noto Sans TC;
     color: #0027D5;
     font-weight: 500;
     Line-height:150%;
@@ -69,8 +68,6 @@ body{
     align-items: center;
 }
 .text-inner .newsbutton{
-    font-size: 16px;
-    font-family:Noto Sans TC;
     font-weight:700;
     color: white;
     background-color: #0027D5;
@@ -84,7 +81,6 @@ body{
 }
 .text-inner .headline{
     font-size: 28px;
-    font-family:Noto Sans TC;
     font-weight: 700;
     Line-Height:150%;
     Letter-spacing:0%;
@@ -99,8 +95,7 @@ body{
   box-sizing: border-box; /*避免 padding 撐出容器 */
 }
 
-h2{
-  font-family: Noto Sans TC;
+h2{  
   font-size: 28px;
   color: #0027D5;
   font-weight: 700;
@@ -113,8 +108,7 @@ img{
   margin: 24px auto 12px auto;
 }
 
-h3{
-  font-family: Noto Sans TC;
+h3{  
   font-size: 20px;
   line-height: 150%;
   font-weight: 700;
@@ -124,9 +118,7 @@ h3{
 p{ 
     white-space: normal;
   word-wrap: break-word;
-  overflow-wrap: break-word;
-  font-family: Noto Sans TC;
-  font-size: 16px;
+  overflow-wrap: break-word;  
   font-weight: 500;
   line-height: 150%;
   letter-spacing:0%;
@@ -137,16 +129,12 @@ ol,ul {
   margin:0;
 }
 
-li{
-  font-family: Noto Sans TC;
-  font-size: 16px;
+li{  
   font-weight: 500;
   line-height: 150%;
   margin:0px;
 }
-.summary{
-  font-family: Noto Sans TC;
-  font-size: 16px;
+.summary{  
   font-weight: 500;
   line-height: 150%;
   letter-spacing:0%;
@@ -164,9 +152,7 @@ li{
   display:inline-block;
   border-radius: 40px;
   border:1px black solid;
-  padding: 8px 16px;
-  font-family: Noto Sans TC;
-  font-size: 16px;
+  padding: 8px 16px;  
   font-weight: 500;
   line-height: 150%;
   letter-spacing:0%;
@@ -176,24 +162,30 @@ li{
   background-color: white; /* 可選 */
   color: #333;        
 }
-
-
-
+.pagechange:hover{
+  background-color: #dddbdb; /* 滑鼠移上去變色 */
+}
 
 .footer{
-    text-align: center;
-    margin: 80px 312px;
+    /*text-align: center;
+    margin: 80px 312px;*/
+    max-width: 100%;
+    margin: 80px auto;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 .footer-inner{
-    height: 208px;
     display:flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1296px; /* 312 * 2 + 672（中間區域） */
+    margin:0 auto;
+    width: 100%;
+    box-sizing: border-box;;
 }
 .contact{    
     font-size: 32px;
     color: #000000;
-    font-family: Noto Sans TC;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -202,7 +194,7 @@ li{
 .social-media {
     display: flex;
     align-items: center;;
-    gap: Specing/ 4px;
+    gap: 4px;
     list-style: none; 
     margin:0;
     padding:0;
@@ -217,8 +209,14 @@ li{
   display: block;
   margin: 0 auto;
 }
-.footer .rights{    
-    font-size: 16px;
+.img:hover img {
+  transform: scale(1.1); /* 鼠標懸停時放大圖片 */
+  transition: transform 0.3s ease; /* 添加過渡效果 */
+}
+
+.footer .rights{
+    display: flex;
+    justify-content: center; 
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0%;
@@ -243,10 +241,13 @@ li{
     .text-section {
         
         flex-direction: column;
+        max-width: 100%;
         flex: 1 1 100%;        
     }
     .text-inner{
         margin:0 auto;
+        max-width: 100%;
+        flex:1 1 100%;
     }
 
     .text-inner .date {
@@ -254,7 +255,6 @@ li{
         margin: 10px 0 0 0;
     }
     .text-inner .newstitle {
-        font-size: 16px;
         margin: 0 0 0 0;
     }
     .text-inner .newsbutton {
@@ -283,13 +283,40 @@ li{
     .footer{
         margin:0;
         margin:24px auto;
+        padding: 0 16px;
         gap:10px;
         text-align: center;
     }
+
+    .footer-inner{
+        display: none;
+        visibility: hidden;
+        height: 0;
+
+    }
+    .rights{
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+}
+
+@media (max-width: 768px) {
     .footer-inner{
         display: none;
     }
-
+    .contact{
+        font-size: 20px;
+        margin: 0;
+    }
+    .social-media {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer{
+        padding:0 16px;
+        margin:40px auto;
+    }
 }
 
 
