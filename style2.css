@@ -165,7 +165,10 @@ li{
 .pagechange:hover{
   background-color: #dddbdb; /* 滑鼠移上去變色 */
 }
-
+.social-media li.img a {
+  text-decoration: none;
+  color: inherit;
+}
 .footer{
     /*text-align: center;
     margin: 80px 312px;*/
