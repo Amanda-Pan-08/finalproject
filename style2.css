@@ -144,9 +144,10 @@ li{
   padding: 24PX;
 }
 .pagefunction{
+  width: 100%;
   display:flex;
   justify-content:space-between;
-  margin:24px auto;
+  margin: 20px auto;
 }
 .pagechange{
   display:inline-block;
@@ -165,10 +166,7 @@ li{
 .pagechange:hover{
   background-color: #dddbdb; /* 滑鼠移上去變色 */
 }
-.social-media li.img a {
-  text-decoration: none;
-  color: inherit;
-}
+
 .footer{
     /*text-align: center;
     margin: 80px 312px;*/
